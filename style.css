@@ -466,6 +466,9 @@ header {
     flex-wrap: wrap;
     justify-content: center;
   }
+  .menu a {
+    font-size: 20px;
+  }
 
   .features-grid {
     grid-template-columns: 1fr;
