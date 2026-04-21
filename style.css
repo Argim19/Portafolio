@@ -9,23 +9,17 @@ html {
 }
 
 body {
-  font-family: "Inter", sans-serif;
-  line-height: 1.5;
-  color: white;
+  font-family: Arial, sans-serif;
   background: black;
-  position: relative;
-}
-
-.bg-fixed {
-  position: fixed;
-  inset: 0;
   background-image: url("fondo-portafolio1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  z-index: -1;
-  filter: blur(10px);
-  transform: scale(1.05);
+  background-attachment: fixed;
+  backdrop-filter: blur(10px);
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: white;
 }
 
 .container {
@@ -36,7 +30,7 @@ body {
 /* Content Header*/
 
 header {
-  background: #000000;
+  background: rgb(0, 0, 0);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -54,27 +48,32 @@ header {
   font-weight: bold;
 }
 
+.open-menu {
+  display: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
+.icon {
+  width: 24px;
+  height: 24px;
+}
+
 .close-menu {
   display: none;
-  flex-direction: column;
-  gap: 4px;
   background: none;
   border: none;
-  padding: 4px;
   cursor: pointer;
+  color: white;
 }
-.close-menu span {
-  width: 25px;
-  height: 3px;
-  margin-top: 4px;
-  background-color: white;
-  display: block;
-}
+
 .menu {
   display: flex;
   gap: 20px;
   align-items: center;
   list-style: none;
+  display: inline-block;
 }
 
 .menu a {
@@ -180,6 +179,9 @@ header {
   height: auto;
   transition: transform 0.3s ease-in-out;
   filter: drop-shadow(0px 10px 10px rgba(0, 0, 0, 2));
+}
+.hero-image img:hover {
+  transform: scale(1.2);
 }
 
 /* Content Section About Me*/
@@ -475,7 +477,6 @@ header {
 @media (max-width: 600px) {
   .menu {
     display: flex;
-
     flex-direction: column;
     position: absolute;
     width: 100%;
@@ -489,6 +490,13 @@ header {
   .active {
     height: 100vh;
   }
+  .open-menu.actives {
+    display: none;
+  }
+  .close-menu.activesed {
+    display: block;
+  }
+
   .btn-mascota {
     display: none;
   }
@@ -502,9 +510,8 @@ header {
     background-color: #000000ce;
     backdrop-filter: blur(5px);
   }
-  .close-menu {
+  .open-menu {
     display: block;
-    padding: 10px;
   }
 
   .menu a {

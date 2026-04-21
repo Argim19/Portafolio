@@ -1,10 +1,19 @@
-const menuToggle = document.querySelector(".close-menu");
+const menuToggle = document.querySelector(".open-menu");
+const menuToggles = document.querySelector(".close-menu");
 const navMenu = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll(".menu a");
 
 if (menuToggle && navMenu) {
   menuToggle.addEventListener("click", () => {
     navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("actives");
+    menuToggles.classList.toggle("activesed");
+  });
+
+  menuToggles.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+    menuToggle.classList.toggle("actives");
+    menuToggles.classList.toggle("activesed");
   });
 
   menuLinks.forEach((link) => {
