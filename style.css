@@ -68,7 +68,6 @@ header {
   gap: 20px;
   align-items: center;
   list-style: none;
-  display: inline-block;
 }
 
 .menu a {
@@ -470,6 +469,10 @@ header {
 }
 
 @media (max-width: 600px) {
+  body {
+    background-attachment: scroll;
+    backdrop-filter: none;
+  }
   .menu {
     display: flex;
 
