@@ -20,11 +20,12 @@ body {
   position: fixed;
   inset: 0;
   background-image: url("fondo-portafolio1.webp");
-  backdrop-filter: blur(10px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   z-index: -1;
+  filter: blur(10px);
+  transform: scale(1.05);
 }
 
 .container {
