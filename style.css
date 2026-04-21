@@ -10,7 +10,6 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background-color: #000000;
   background-image: url("fondo-portafolio1.webp");
   backdrop-filter: blur(10px);
   background-position: center;
