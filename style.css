@@ -9,16 +9,21 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-image: url("fondo-portafolio1.webp");
-  backdrop-filter: blur(10px);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   color: white;
+  background: black;
+  position: relative;
+}
+
+.bg-fixed {
+  position: fixed;
+  inset: 0;
+  background-image: url("fondo-portafolio1.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 
 .container {
@@ -466,10 +471,6 @@ header {
 }
 
 @media (max-width: 600px) {
-  body {
-    background-attachment: scroll;
-    backdrop-filter: none;
-  }
   .menu {
     display: flex;
 
