@@ -10,13 +10,13 @@ html {
 
 body {
   font-family: Arial, sans-serif;
-  background: black;
+  background-color: #000000;
   background-image: url("fondo-portafolio1.webp");
+  backdrop-filter: blur(10px);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  backdrop-filter: blur(10px);
   font-family: "Inter", sans-serif;
   line-height: 1.5;
   color: white;
@@ -30,7 +30,7 @@ body {
 /* Content Header*/
 
 header {
-  background: rgb(0, 0, 0);
+  background: #000000;
   position: sticky;
   top: 0;
   z-index: 1000;
