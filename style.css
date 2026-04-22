@@ -9,19 +9,24 @@ html {
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
+  line-height: 1.5;
+  color: white;
   background: black;
+  position: relative;
+}
+
+.bg-fixed {
+  position: fixed;
+  inset: 0;
   background-image: url("fondo-portafolio1.webp");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
-  backdrop-filter: blur(10px);
-  font-family: "Inter", sans-serif;
-  line-height: 1.5;
-  color: white;
+  z-index: -1;
+  filter: blur(10px);
+  transform: scale(1.05);
 }
-
 .container {
   width: min(1100px, 90%);
   margin: 0 auto;
@@ -54,6 +59,7 @@ header {
   background: none;
   cursor: pointer;
   color: white;
+  padding: 11.5px 0;
 }
 .icon {
   width: 24px;
@@ -66,6 +72,7 @@ header {
   border: none;
   cursor: pointer;
   color: white;
+  padding: 11.5px 0;
 }
 
 .menu {
