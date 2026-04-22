@@ -497,6 +497,7 @@ header {
   .active {
     height: 100vh;
   }
+
   .open-menu.actives {
     display: none;
   }
