@@ -19,6 +19,8 @@ if (menuToggle && navMenu) {
   menuLinks.forEach((link) => {
     link.addEventListener("click", () => {
       navMenu.classList.remove("active");
+      menuToggle.classList.remove("actives");
+      menuToggles.classList.remove("activesed");
     });
   });
 }
