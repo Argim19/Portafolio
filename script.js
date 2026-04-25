@@ -2,6 +2,12 @@ const menuToggle = document.querySelector(".open-menu");
 const menuToggles = document.querySelector(".close-menu");
 const navMenu = document.querySelector(".menu");
 const menuLinks = document.querySelectorAll(".menu a");
+const menuName = document.querySelectorAll(".logo");
+const classHead = document.querySelectorAll(".head-n");
+
+menuName.addEventListener("click", () => {
+  classHead.classList.toggle("active-name");
+});
 
 if (menuToggle && navMenu) {
   menuToggle.addEventListener("click", () => {

@@ -49,8 +49,10 @@ header {
   align-items: center;
   padding: 18px 0;
 }
-
 .logo {
+  cursor: pointer;
+}
+.logo h2 {
   font-size: 1.3rem;
   font-weight: bold;
 }
