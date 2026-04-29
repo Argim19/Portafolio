@@ -501,6 +501,9 @@ header {
 }
 
 @media (max-width: 600px) {
+  body.no-scroll {
+    overflow: hidden;
+  }
   .menu {
     display: flex;
     flex-direction: column;

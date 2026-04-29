@@ -6,15 +6,17 @@ const body = document.body;
 
 if (menuToggle && navMenu) {
   menuToggle.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    menuToggle.classList.toggle("actives");
-    menuToggles.classList.toggle("activesed");
+    navMenu.classList.add("active");
+    menuToggle.classList.add("actives");
+    menuToggles.classList.add("activesed");
+    body.classList.add("no-scroll");
   });
 
   menuToggles.addEventListener("click", () => {
-    navMenu.classList.toggle("active");
-    menuToggle.classList.toggle("actives");
-    menuToggles.classList.toggle("activesed");
+    navMenu.classList.remove("active");
+    menuToggle.classList.remove("actives");
+    menuToggles.classList.remove("activesed");
+    body.classList.remove("no-scroll");
   });
 
   menuLinks.forEach((link) => {
@@ -22,6 +24,7 @@ if (menuToggle && navMenu) {
       navMenu.classList.remove("active");
       menuToggle.classList.remove("actives");
       menuToggles.classList.remove("activesed");
+      body.classList.remove("no-scroll");
     });
   });
 }
